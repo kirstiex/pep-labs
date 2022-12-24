@@ -4,7 +4,7 @@
 -------------------------------------------------------
 Picked up JAVA_TOOL_OPTIONS:  -Xmx3489m
 Running BirdTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec
 
 Results :
 
