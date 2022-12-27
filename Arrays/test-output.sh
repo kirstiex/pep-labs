@@ -4,8 +4,8 @@
 -------------------------------------------------------
 Picked up JAVA_TOOL_OPTIONS:  -Xmx3489m
 Running ArrayBasicsTest
-Tests run: 9, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec <<< FAILURE!
-getNthElementOfArrayTest1(ArrayBasicsTest)  Time elapsed: 0.007 sec  <<< FAILURE!
+Tests run: 9, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec <<< FAILURE!
+getNthElementOfArrayTest1(ArrayBasicsTest)  Time elapsed: 0.008 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<7> but was:<0>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -87,7 +87,7 @@ java.lang.AssertionError: expected:<5> but was:<0>
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-getNthElementOfArrayTest3(ArrayBasicsTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+getNthElementOfArrayTest3(ArrayBasicsTest)  Time elapsed: 0 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<8> but was:<0>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -128,7 +128,7 @@ java.lang.AssertionError: expected:<8> but was:<0>
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-setNthElementOfArrayTest1(ArrayBasicsTest)  Time elapsed: 0 sec  <<< FAILURE!
+setNthElementOfArrayTest1(ArrayBasicsTest)  Time elapsed: 0.001 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<7> but was:<5>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -169,7 +169,7 @@ java.lang.AssertionError: expected:<7> but was:<5>
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-setNthElementOfArrayTest2(ArrayBasicsTest)  Time elapsed: 0 sec  <<< FAILURE!
+setNthElementOfArrayTest2(ArrayBasicsTest)  Time elapsed: 0.001 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<9> but was:<2>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -248,7 +248,7 @@ java.lang.AssertionError: array nas not been created.
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-returnNewArraySizeNTest2(ArrayBasicsTest)  Time elapsed: 0 sec  <<< FAILURE!
+returnNewArraySizeNTest2(ArrayBasicsTest)  Time elapsed: 0.001 sec  <<< FAILURE!
 java.lang.AssertionError: array nas not been created.
 	at org.junit.Assert.fail(Assert.java:89)
 	at ArrayBasicsTest.returnNewArraySizeNTest2(ArrayBasicsTest.java:118)
