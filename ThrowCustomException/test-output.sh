@@ -4,9 +4,8 @@
 -------------------------------------------------------
 Picked up JAVA_TOOL_OPTIONS:  -Xmx3489m
 Running CustomExceptionTest
-Caught
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec <<< FAILURE!
-customExceptionTest1(CustomExceptionTest)  Time elapsed: 0.008 sec  <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec <<< FAILURE!
+customExceptionTest1(CustomExceptionTest)  Time elapsed: 0.007 sec  <<< FAILURE!
 java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:87)
 	at org.junit.Assert.fail(Assert.java:96)

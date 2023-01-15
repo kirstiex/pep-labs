@@ -8,13 +8,12 @@ public class CustomExceptionThrower {
      *
      * I recommend looking at the test case for a good example of try/catch block usage, as well.
      */
-    public void throwCustomException(){
-        try {
-            throw new CustomException("THrow the exception");
-        } catch (CustomException ex) {
-            
-             System.out.println("Caught");
-        }
-    }
+     
+    public void throwCustomException(){   
+        String word = "p" ;    
+            if(word.contains("p")){
+            throw new CustomException();
 
+    }
+}
 }
