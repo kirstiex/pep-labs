@@ -4,7 +4,7 @@
 -------------------------------------------------------
 Picked up JAVA_TOOL_OPTIONS:  -Xmx3489m
 Running ListExerciseTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec
 
 Results :
 
