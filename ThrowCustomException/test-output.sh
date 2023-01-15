@@ -4,13 +4,13 @@
 -------------------------------------------------------
 Picked up JAVA_TOOL_OPTIONS:  -Xmx3489m
 Running CustomExceptionTest
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.093 sec <<< FAILURE!
-customExceptionTest1(CustomExceptionTest)  Time elapsed: 0.008 sec  <<< ERROR!
-java.lang.Error: Unresolved compilation problem: 
-	Syntax error, insert ";" to complete BlockStatements
-
-	at CustomExceptionThrower.throwCustomException(CustomExceptionThrower.java:13)
-	at CustomExceptionTest.customExceptionTest1(CustomExceptionTest.java:23)
+Caught
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec <<< FAILURE!
+customExceptionTest1(CustomExceptionTest)  Time elapsed: 0.008 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.fail(Assert.java:96)
+	at CustomExceptionTest.customExceptionTest1(CustomExceptionTest.java:24)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -48,10 +48,9 @@ java.lang.Error: Unresolved compilation problem:
 
 Results :
 
-Tests in error: 
-  customExceptionTest1(CustomExceptionTest): Unresolved compilation problem: (..)
+Failed tests:   customExceptionTest1(CustomExceptionTest)
 
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0
 
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project PEPLabsChallenges: There are test failures.
 [ERROR] 

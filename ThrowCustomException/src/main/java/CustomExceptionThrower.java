@@ -10,9 +10,9 @@ public class CustomExceptionThrower {
      */
     public void throwCustomException(){
         try {
-            throw new CustomException("THrow the exception")
+            throw new CustomException("THrow the exception");
         } catch (CustomException ex) {
-            // TODO: handle exception
+            
              System.out.println("Caught");
         }
     }
