@@ -9,7 +9,12 @@ public class CustomExceptionThrower {
      * I recommend looking at the test case for a good example of try/catch block usage, as well.
      */
     public void throwCustomException(){
-
+        try {
+            throwCustomException();
+        } catch (Exception e) {
+            // TODO: handle exception
+             CustomException();
+        }
     }
 
 }
