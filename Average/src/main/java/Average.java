@@ -17,7 +17,14 @@ public class Average {
      * @param nums an array to be manipulated.
      * @return the average of all the values of nums.
      */
+    double average = 0.0;
     public double getAvg(int[] nums){
-        return 0;
+        double sum = 0;
+        
+        for (int i=0; i < nums.length;i++){
+            sum = sum + nums[i];
+        }
+        average = sum / nums.length;
+        return average;
     }
 }
