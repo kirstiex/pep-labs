@@ -64,9 +64,8 @@ public class CreateATable {
      */
     public void problem1(){
         String sql = FileUtil.parseSQLFile("problem1.sql");
-        Create Table song(
-            
-        )
+       
+
         try {
             Connection connection = ConnectionUtil.getConnection();
             Statement s = connection.createStatement();
