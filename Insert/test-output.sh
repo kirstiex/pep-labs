@@ -4,7 +4,7 @@
 -------------------------------------------------------
 Picked up JAVA_TOOL_OPTIONS:  -Xmx3489m
 Running InsertARecordTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.558 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.326 sec
 
 Results :
 
