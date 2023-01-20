@@ -4,7 +4,7 @@
 -------------------------------------------------------
 Picked up JAVA_TOOL_OPTIONS:  -Xmx3489m
 Running GroupByTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.52 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.707 sec
 
 Results :
 
