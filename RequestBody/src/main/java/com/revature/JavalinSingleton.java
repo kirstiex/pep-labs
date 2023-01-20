@@ -18,6 +18,12 @@ public class JavalinSingleton {
          */
         app.post("/problem1", ctx -> {
                 //implement logic here
+                    //retrieve the json string from the request body
+                    String jsonString = ctx.body();
+                
+                    //utilize jackson to convert the json string to a user object
+                    ObjectMapper om = new ObjectMapper();
+                    User user = om.readValue(jsonString, User.class);
         });
 
         /**
