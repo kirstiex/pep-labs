@@ -1,9 +1,13 @@
 package Application.Service;
 
 import Application.Model.Flight;
+import Application.Util.ConnectionUtil;
 import Application.DAO.FlightDAO;
 
+import java.sql.Connection;
 import java.util.List;
+
+import org.h2.engine.Database;
 
 /**
  * The purpose of a Service class is to contain "business logic" that sits between the web layer (controller) and
@@ -45,8 +49,8 @@ public class FlightService {
      *         inform our provide the front-end client with information about the added Flight.
      */
     public Flight addFlight(Flight flight){
-
-        return null;
+        
+        return flightDAO.insertFlight(flight);
     }
 
     /**
@@ -78,7 +82,7 @@ public class FlightService {
      * @return all flights in the database.
      */
     public List<Flight> getAllFlights() {
-        return null;
+        return flightDAO.getAllFlights();
     }
 
     /**
