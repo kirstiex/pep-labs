@@ -26,8 +26,8 @@ Table "FLIGHTS" not found; SQL statement:
 UPDATE flights SET departure_city= ?, arrival_city=? WHERE flight_id = ?; [42102-214]
 Table "FLIGHTS" not found; SQL statement:
 SELECT * FROM flights WHERE flight_id = ?; [42102-214]
-Tests run: 13, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 2.068 sec <<< FAILURE!
-getAllFlightsTest1(FlightAppTest)  Time elapsed: 1.793 sec  <<< FAILURE!
+Tests run: 13, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 1.261 sec <<< FAILURE!
+getAllFlightsTest1(FlightAppTest)  Time elapsed: 1.052 sec  <<< FAILURE!
 java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:87)
 	at org.junit.Assert.assertTrue(Assert.java:42)
@@ -67,7 +67,7 @@ java.lang.AssertionError
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-addFlightCheckAllFlightsTest1(FlightAppTest)  Time elapsed: 0 sec  <<< FAILURE!
+addFlightCheckAllFlightsTest1(FlightAppTest)  Time elapsed: 0.004 sec  <<< FAILURE!
 java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:87)
 	at org.junit.Assert.assertTrue(Assert.java:42)
@@ -147,7 +147,7 @@ java.lang.AssertionError
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-addFlightCheckByIdTest1(FlightAppTest)  Time elapsed: 0.006 sec  <<< FAILURE!
+addFlightCheckByIdTest1(FlightAppTest)  Time elapsed: 0.005 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<Flight{flight_id=7, departure_city='tampa', arrival_city='morgantown'}> but was:<null>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -188,7 +188,7 @@ java.lang.AssertionError: expected:<Flight{flight_id=7, departure_city='tampa', 
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-getFlightByIDTest1(FlightAppTest)  Time elapsed: 0.008 sec  <<< FAILURE!
+getFlightByIDTest1(FlightAppTest)  Time elapsed: 0.004 sec  <<< FAILURE!
 java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:87)
 	at org.junit.Assert.fail(Assert.java:96)
@@ -227,7 +227,7 @@ java.lang.AssertionError
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-getFlightByIDTest2(FlightAppTest)  Time elapsed: 0.007 sec  <<< FAILURE!
+getFlightByIDTest2(FlightAppTest)  Time elapsed: 0.004 sec  <<< FAILURE!
 java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:87)
 	at org.junit.Assert.fail(Assert.java:96)
@@ -306,7 +306,7 @@ java.lang.AssertionError
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-updateFlightDAOTest1(FlightAppTest)  Time elapsed: 0.047 sec  <<< FAILURE!
+updateFlightDAOTest1(FlightAppTest)  Time elapsed: 0.007 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<Flight{flight_id=1, departure_city='reston', arrival_city='dallas'}> but was:<null>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
