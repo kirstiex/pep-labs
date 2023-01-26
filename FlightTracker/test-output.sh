@@ -26,8 +26,8 @@ Table "FLIGHTS" not found; SQL statement:
 UPDATE flights SET departure_city= ?, arrival_city=? WHERE flight_id = ?; [42102-214]
 Table "FLIGHTS" not found; SQL statement:
 SELECT * FROM flights WHERE flight_id = ?; [42102-214]
-Tests run: 13, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 1.895 sec <<< FAILURE!
-getAllFlightsTest1(FlightAppTest)  Time elapsed: 1.616 sec  <<< FAILURE!
+Tests run: 13, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 2.068 sec <<< FAILURE!
+getAllFlightsTest1(FlightAppTest)  Time elapsed: 1.793 sec  <<< FAILURE!
 java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:87)
 	at org.junit.Assert.assertTrue(Assert.java:42)
@@ -67,7 +67,7 @@ java.lang.AssertionError
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-addFlightCheckAllFlightsTest1(FlightAppTest)  Time elapsed: 0.004 sec  <<< FAILURE!
+addFlightCheckAllFlightsTest1(FlightAppTest)  Time elapsed: 0 sec  <<< FAILURE!
 java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:87)
 	at org.junit.Assert.assertTrue(Assert.java:42)
@@ -107,7 +107,7 @@ java.lang.AssertionError
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-getFlightsDAOFromCityToCityTest1(FlightAppTest)  Time elapsed: 0.058 sec  <<< FAILURE!
+getFlightsDAOFromCityToCityTest1(FlightAppTest)  Time elapsed: 0.005 sec  <<< FAILURE!
 java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:87)
 	at org.junit.Assert.assertTrue(Assert.java:42)
@@ -147,7 +147,7 @@ java.lang.AssertionError
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-addFlightCheckByIdTest1(FlightAppTest)  Time elapsed: 0.008 sec  <<< FAILURE!
+addFlightCheckByIdTest1(FlightAppTest)  Time elapsed: 0.006 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<Flight{flight_id=7, departure_city='tampa', arrival_city='morgantown'}> but was:<null>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -188,7 +188,7 @@ java.lang.AssertionError: expected:<Flight{flight_id=7, departure_city='tampa', 
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-getFlightByIDTest1(FlightAppTest)  Time elapsed: 0.003 sec  <<< FAILURE!
+getFlightByIDTest1(FlightAppTest)  Time elapsed: 0.008 sec  <<< FAILURE!
 java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:87)
 	at org.junit.Assert.fail(Assert.java:96)
@@ -227,7 +227,7 @@ java.lang.AssertionError
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-getFlightByIDTest2(FlightAppTest)  Time elapsed: 0.005 sec  <<< FAILURE!
+getFlightByIDTest2(FlightAppTest)  Time elapsed: 0.007 sec  <<< FAILURE!
 java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:87)
 	at org.junit.Assert.fail(Assert.java:96)
@@ -266,46 +266,7 @@ java.lang.AssertionError
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-getFlightsFromCityToCityTest1(FlightAppTest)  Time elapsed: 0.037 sec  <<< FAILURE!
-java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.fail(Assert.java:96)
-	at FlightAppTest.getFlightsFromCityToCityTest1(FlightAppTest.java:218)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-
-getFlightsFromCityToCityTest2(FlightAppTest)  Time elapsed: 0.007 sec  <<< FAILURE!
+getFlightsFromCityToCityTest2(FlightAppTest)  Time elapsed: 0.004 sec  <<< FAILURE!
 java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:87)
 	at org.junit.Assert.assertTrue(Assert.java:42)
@@ -345,7 +306,7 @@ java.lang.AssertionError
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-updateFlightDAOTest1(FlightAppTest)  Time elapsed: 0.008 sec  <<< FAILURE!
+updateFlightDAOTest1(FlightAppTest)  Time elapsed: 0.047 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<Flight{flight_id=1, departure_city='reston', arrival_city='dallas'}> but was:<null>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -395,11 +356,10 @@ Failed tests:   getAllFlightsTest1(FlightAppTest)
   addFlightCheckByIdTest1(FlightAppTest): expected:<Flight{flight_id=7, departure_city='tampa', arrival_city='morgantown'}> but was:<null>
   getFlightByIDTest1(FlightAppTest)
   getFlightByIDTest2(FlightAppTest)
-  getFlightsFromCityToCityTest1(FlightAppTest)
   getFlightsFromCityToCityTest2(FlightAppTest)
   updateFlightDAOTest1(FlightAppTest): expected:<Flight{flight_id=1, departure_city='reston', arrival_city='dallas'}> but was:<null>
 
-Tests run: 13, Failures: 9, Errors: 0, Skipped: 0
+Tests run: 13, Failures: 8, Errors: 0, Skipped: 0
 
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project PEPLabsChallenges: There are test failures.
 [ERROR] 
