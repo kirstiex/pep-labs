@@ -1,0 +1,1 @@
+SELECT class.teacher_name, student.student_name FROM class LEFT JOIN student ON class.class_title = student.class_title;
