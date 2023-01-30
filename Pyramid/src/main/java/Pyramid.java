@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Pyramid {
     /**
@@ -26,7 +27,15 @@ public class Pyramid {
      * @param n the size of the pyramid.
      * @return a string representation of the pyramid.
      */
-    public String returnPyramid(int n){
-        return "";
+
+     public String returnPyramid(int n){
+        String star = "";
+        for(int i = 1; i <= n; i++){
+            for(int j = 0; j < i; j++){
+                star += "*";
+            }
+            star += "\n";
+        }
+        return star;
     }
 }
